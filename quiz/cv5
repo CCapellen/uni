@@ -1,0 +1,38 @@
+Q: What algorithms are there for segmentation?
+A: -
+Q: How does k-means work?
+A: -
+Q: What is Agglomerative Clustering?
+A: All points start as a cluster, in each step merge closest points to one cluster, until only one cluster is left (use proximity Matrix)
+Q: What is Ward's Method? And why is it used?
+A: It is a similarity measure which is less suceptible to noise and outliers. It is based on the increase in squared error when two clusters are merged (\triangle(A,B) = sum_{i\in A or B} ... )
+Q: What does the Mean shift algorithm do?
+A: It seeks modes or local maxima of density in the feature space
+Q: What are the advantages of the mean shift algorithm?
+A: Pros: \n -Does not assume shapes on clusters \n -One parameter choice (window size) \n -Generic Technique \n -Find multiple modes \n\n Cons: \n -Selection of window size \n - Does not scale well with dimension of feature space
+Q: What are Graph Cuts used for?
+A: The minimum cut of a graph indentifies an optimal partitioning of the data
+Q: What is a minimum cut of a graph?
+A: a seperation of the graph nodes into to disjoint subsets with minimal cut costs
+Q: How are degree and volume of a graph node defined?
+A: D(xi) = \sum{j \in V} \omega_{ij} ; Vol(C) = \sum_{i \in C} D(x_i)
+Q: How is the cut of a graph defined?
+A: Cut(C_1,C_2) = \sum{i \in C_1} \sum{j \in C_2} \omega_{ij}
+Q: How do you calculate the pairwise affinity?
+A: \omega_{ij} = d(x_i,x_j) = exp(-\frac{||x_i-x_j||²}{2\sigma²})
+Q: What is a normalized Graph Cut and why are they used?
+A: A minimal Graph cut might be unbalanced. For example only one node would be seperated, but it would be better if the criteria would prefer cuts which leave partitions of similar size. Normalized Cut: (\frac{1}{Vol(C_1)} + \frac{1}{Vol(C_2)}) Cut(C_1,C_2)
+Q: What is Spectral Clustering?
+A: 
+Q:What is the Graph Laplacian?
+A:
+Q: Why is the solution of spectral clustering only an approximation and how can you improve it?
+A: 
+Q: What are Laplacian eigenmaps?
+A:
+Q: How do the results of K means and spectral clustering compare?
+A:
+Q: Why is he talking about Eigenvalue Problem and random walk now?
+
+
+
