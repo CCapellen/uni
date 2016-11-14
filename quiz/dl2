@@ -1,0 +1,23 @@
+Q: what is under-/ overfitting?
+A: underfitting: ALgorithm has high training error \n overfitting: Algorithm has low training error but a high test error
+Q: What is the model capacity?
+A: the capability of the algorithm to reach the correct answer?
+Q: when is the capability optimal?
+A: 
+Q: How works nearest neighbor estimation
+A:
+Q: How works statistical estimation? 
+A:
+Q: How is the bias defined?
+A: 
+Q: How is the variance defined?
+A: 
+Q: How is the mean squared error defined?
+A: 
+Q: How works maximum likelihood estimation?
+A:
+Q: What does Conditional Log-Likelihoods do?
+A: 
+Q: What is the MAP Estimation?
+A: 
+

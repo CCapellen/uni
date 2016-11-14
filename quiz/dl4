@@ -1,0 +1,41 @@
+Q: What is a directional derivative?
+A: the instantaneous rate of change of a function f in the direction of unit vector u
+Q: slide 15. What? steps in the equation?
+A:
+Q: How is the jacobian matrix defined?
+A:
+Q: How is the hessian matrix defined?
+A:
+Q: Define a cost function derived from maximum likelihood
+A:
+Q: What is the connection between the gradients of activation functions and their ability to learn?
+A:
+Q: Define the sigmoid function, and sketch
+A:
+Q: Define the softplus function, and sketch
+A:
+Q: What are good applications for sigmoid and softplus function?
+A:
+Q: Define and sketch a rectified linear unit
+A:
+Q: What variants of Rectified linear units are there?
+A:
+Q: What is a Maxout unit?
+A:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Spelling mistakes:
+lecture 4 slide 18: graident
+
+

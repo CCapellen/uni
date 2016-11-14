@@ -1,0 +1,51 @@
+Q: What algorithms are there for edge detection?
+A:
+Q: How is the sobel filter defined and what does it do?
+A: It approximated the gradient; -1,-2,-1; 0,0,0; 1,2,1; (y-direction)
+Q: how do you calculate the edge strength and the gradient direction?
+A: Calculate x and y gradient, direction is tan^-1(x-grad, y-grad), edge strenght = \sqrt{x-grad^2 + y-grad^2}
+Q: Why is it a good idea to smooth before edge detection?
+A: because the noise might be interpreted as edges
+Q: What does the derivative theorem of convolution say?
+A: Differntiation is convolution and convolution is associative --> smoothing and deriving can be done in one step
+Q: What are the difference between smoothing and derivative filters?
+A: smoothing: values sum up to one
+Q: What is Non-maximum suppression?
+A: transforms thick edges to line of width one
+Q: What is Hysteresis thresholding?
+A: Uses two different thresholds, one to start an edge and a lower one on whether to continue an edge
+Q: What are the steps of the Canny edge detector?
+A: 1. Filter image with derivative of guassian \n 2. Find magnitude and orientation of gradient \n 3. Non-maximum surpression \n 4. Linking and thresholding (hysteresis)
+Q: How is the Chamfer distance defined?
+A: Average distance to the nearest feature from template
+Q: What is the Distance Transform?
+A: A function which assigns to every pixel the distance to the nearest feature in the image I
+Q: Which distance measures are there and how are they defined?
+A:
+Q: Why can it be good to use a voting technique?
+A: It is more resistant to noise and clutter.  Why?
+Q: What is the idea of the Hough transform?
+A: you look for a specific shape (line, circle). Every point in the image votes for all the shapes it could be part of. The shapes are counted in hough space which shows a different parameterization of the shape in a way that each coordinate represents this shape with specific parameters (including location) in the original image
+Q: What are the equations how to diplay a line, a circle in hough space?
+A: line: x cos \theta - y sin \theta = d ( d is perpendicular distance from line to origin); \n circle: (x-a)^2 + (y-b)^2 = r^2
+Q: Sketch the Hough algorithm (for lines):
+A: 1. initialize pixel in hough space to be 0 \n 2. for each edge pixel in the image, iterate over theta (quantization) and calculate d. Vote for this pixel \n 3.Find maximas in Hough space \n 4. retrieve line in original image
+Q: Sketch the hough algorithm for circles:
+A: For every edge pixel, for every radius r, for each possible gradien direction \theta: calculate a,b and vote for H[a,b,r]
+Q: What choices influence the Hough Transform (parameters, ... )/ How can you improve it?
+A:
+Q: What is the idea of mean shift?
+A:
+Q: Give a function for Kernel density estimation
+A: 
+Q: Name some kernels which can be used for Kernel density estimation. Describe their influence
+A: 
+Q: Sketch the mean shift procedure
+A:
+Q: What are pros and cons of Hough transform?
+A:
+Q: What is the generalized Hough transform?
+A:
+
+
+
