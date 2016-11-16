@@ -1,0 +1,37 @@
+Q: What is the idea of deformable contours?
+A: Have a "elastic band" which tries to be near image positions with high gradients and satisfies shape "preferences"
+Q: What are polygonal snakes, B-Spline snakes?
+A:
+Q: What is internal and external energy?
+A: Internal Energy: Encourages prior shape preferences (smoothness, elasticity, particular known shape) \n External Energy: encourages contour to fit on places where image structures exist (edges)
+Q: Give the formula for external energy.
+A: E(v) = -(|G_x(v)|^2 + |G_y(v)|^2) where G_x(v) and G_y(v) are the gradients
+Q: What is the formula for internal energy and what does it express?
+A: (for a curve): \sum_{i=0}{n-1} \alpha ( d - ||v_{i+1} - v{i}||)^2 + \beta ||v_{i+1} - 2v_i + v_{i-1}||^2. These reflect tension and curvature of the curve.
+Q: How can the elasticity be improved?
+A: introducing the average distance between pairs of points - updated at each iteration WHY DOES THAT HELP?
+Q: What is the formula for the total energy function and what are the parameters?
+A: E_tot = E_internal + \gamma * E_external, alpha, beta und gamma: alpha controls internal elasticity, beta the curvatureand gamma the external energy
+Q: What is the snake model?
+A:
+Q: What is the formula for the continuous snake model and what do the terms mean?
+A: FORMULA - External Energy + alpha * penality for lenght of contour + beta * penality for total curvature along the contour
+Q: What algorithms are there for minimizing the energy of snakes?
+A: Greedy search, dynamik programming (2d), variational optimization
+Q: Sketch the greedy algorithm for energy minimization for snakes. What are issues?
+A: For each point: search window around it and move point to where energy function is minimal \n stop when predefined number of points have no changed in last iteration(s); issues: needs decent initialization; convergence not guaranteed
+Q: Describe the dynamic programming algorithm for minimizing the energy of snakes.
+A: 
+Q: How can dynamic programming optimize a closed snake?
+A:
+Q: What is the idea of local optimization with gradient descent? 
+A: employing the calculus of variation and gradient descent. WHAT?
+Q: What is a level set function?
+A: A function u(x,y) which is an implicit contour representation: All points (x,y) with u(x,y)=0 are part of the contour; u(x,y) < 0 are points enclosed by the contour
+Q: How can you get a level set function?
+A: using a distance map u(x,y)= +- dist((x,y),C)
+Q: What is the level set equation and what does it mean?
+A:
+
+
+
