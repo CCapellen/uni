@@ -1,0 +1,31 @@
+Q: Which kind of models can be represented in the form of a grid?
+A: Models with one unknown world states. WHY?
+Q: What is a Markov random field?
+A: A (graphical?) model which models the distribution as a normalized product of factors. The factors are defined on the cliques of the graph. 
+Q: What does the Markov random field have to do with smoothing? 
+A:
+Q: How is the Bernoulli Distribution defined? What do you model with it?
+A: Pr(x) = \lambda^x * (1- \lambda)^{1-x}; situation with only two possible outcomes. \lambda is chance of winning
+Q: What is Maximum Likelihood?
+A: finds the parameters under which a given data is most likely: \theta = argmax_\theta [ Pr(data|\theta)]
+Q: What is the Maximum a posteriori (MAP)?
+A: A method to find the parameters which maximizes the posterior probability: \theta = argmax_\theta[Pr(\theta|data)] = argmax_\theta[\sum_{i=1}^I Pr(datapoint i | \theta) Pr(\theta)]
+Q: How do you denoise with Markov Random fields?
+A: Theoretically: build graph structure from observed image and Likelihoods of flips. Use MAP inference to maximize the probability that a original picture w is there given that the observed picture x is there (with parameter w). Transform this into a minimization problem over w, which tries to minimize the unary terms of w and the termwise pairs. Use graph cuts form optimization of this cost function
+Q: Describe the Max-Flow Problem
+A: You have a directed graph with a source and a sink. The edges have capacities. Goal is to find the maximum fluction which can pass through the graph
+Q: What is the relationship between Graph cuts and the Max-Flow Problem?
+A: You can transform the graph cut problem to the Max-Flow problem: The set of saturated edges seperates source and sink. You take every pixel as node, nodes for source and sink with unary costs. Add edges from every pixel node to sink and source, reciprocal egdes between neighbors with pairwise costs. 
+Q: How can you calculate the max flow of a network?
+A: With augmenting paths: Choose every route from source to sink with spare capacity and push as much flow as you can. For each path one edge will be saturated, you can ignore it afterwards
+Q: Whats up with general pariwise cost?
+A:
+Q: Why might you need to reparameterize the max flow network and how do you do it?
+A:
+Q: How can you do the max-flow for multiple labels?
+A:
+
+...
+
+
+

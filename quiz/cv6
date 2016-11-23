@@ -17,7 +17,7 @@ A:
 Q: What is the formula for the continuous snake model and what do the terms mean?
 A: FORMULA - External Energy + alpha * penality for lenght of contour + beta * penality for total curvature along the contour
 Q: What algorithms are there for minimizing the energy of snakes?
-A: Greedy search, dynamik programming (2d), variational optimization
+A: Greedy search, dynamic programming (2d), variational optimization
 Q: Sketch the greedy algorithm for energy minimization for snakes. What are issues?
 A: For each point: search window around it and move point to where energy function is minimal \n stop when predefined number of points have no changed in last iteration(s); issues: needs decent initialization; convergence not guaranteed
 Q: Describe the dynamic programming algorithm for minimizing the energy of snakes.
@@ -31,7 +31,13 @@ A: A function u(x,y) which is an implicit contour representation: All points (x,
 Q: How can you get a level set function?
 A: using a distance map u(x,y)= +- dist((x,y),C)
 Q: What is the level set equation and what does it mean?
-A:
+A: describes how the embedding function evolves over time.
+Q: What are Geodesic active contours?
+A: Penalizes the geodesic length (shortest curve between two points) of the contour (combines internal and external energy of the snake model)
+Q: What is the geodesic length?
+A: The shortest path between two points in a curved space
+Q: Describe the level set method
+A: evolves the curve by evolving the embedding function; the level set equation tells you for how the embedding function evolves over time; with gradient descent from this you can obtain the values on how to update
 
 
 
