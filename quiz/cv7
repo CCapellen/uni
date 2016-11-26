@@ -2,8 +2,6 @@ Q: Which kind of models can be represented in the form of a grid?
 A: Models with one unknown world states. WHY?
 Q: What is a Markov random field?
 A: A (graphical?) model which models the distribution as a normalized product of factors. The factors are defined on the cliques of the graph. 
-Q: What does the Markov random field have to do with smoothing? 
-A:
 Q: How is the Bernoulli Distribution defined? What do you model with it?
 A: Pr(x) = \lambda^x * (1- \lambda)^{1-x}; situation with only two possible outcomes. \lambda is chance of winning
 Q: What is Maximum Likelihood?
@@ -12,20 +10,40 @@ Q: What is the Maximum a posteriori (MAP)?
 A: A method to find the parameters which maximizes the posterior probability: \theta = argmax_\theta[Pr(\theta|data)] = argmax_\theta[\sum_{i=1}^I Pr(datapoint i | \theta) Pr(\theta)]
 Q: How do you denoise with Markov Random fields?
 A: Theoretically: build graph structure from observed image and Likelihoods of flips. Use MAP inference to maximize the probability that a original picture w is there given that the observed picture x is there (with parameter w). Transform this into a minimization problem over w, which tries to minimize the unary terms of w and the termwise pairs. Use graph cuts form optimization of this cost function
+Q: Why can Markov Random Fields be used for denoising?
+A: The factors are chosen in a way that a smooth solution is ecouraged (smooth being that the pixel are more likely to have the same value as their neighbors)(but also that a pixel of the solution will likely have the same value as the observed picture)
 Q: Describe the Max-Flow Problem
 A: You have a directed graph with a source and a sink. The edges have capacities. Goal is to find the maximum fluction which can pass through the graph
 Q: What is the relationship between Graph cuts and the Max-Flow Problem?
-A: You can transform the graph cut problem to the Max-Flow problem: The set of saturated edges seperates source and sink. You take every pixel as node, nodes for source and sink with unary costs. Add edges from every pixel node to sink and source, reciprocal egdes between neighbors with pairwise costs. 
+A: You can transform the graph cut problem to the Max-Flow problem. The set of saturated edges seperates source and sink. You take every pixel as node. 
 Q: How can you calculate the max flow of a network?
 A: With augmenting paths: Choose every route from source to sink with spare capacity and push as much flow as you can. For each path one edge will be saturated, you can ignore it afterwards
-Q: Whats up with general pariwise cost?
-A:
-Q: Why might you need to reparameterize the max flow network and how do you do it?
-A:
-Q: How can you do the max-flow for multiple labels?
+Q: How would a network for solving the graph cut problem with Max-Flow look like? (easy one with assumption \theta_{00} = \theta{11}= 0 and with general pairwise costs). In which case do you need reparameterization and how would you do it?
+A: Reparameterization is neccessary because in the max-flow problem all capacities have to be non-negative. You can change the edge capacities so that every possible solution has a constant cost added to it. Then the soluction will not be changed. One reparameterization addes a constant cost \alpha to the edge from a given pixel to the source and from the same pixel to the sink. Another possibility is to add a beta as alpha was added and additionally substract beta and add beta to the edges between two pixels.
+Q: What could be possible values for the thetas if you want to denoise a picture?
+A: \theta_{01} and \theta_{10} should be greater than \theta_{11} and \theta_{00} for favouring a smooth solution. Then the problem is also submodular.
+Q: What is a submodular problem in the context of the min-cut problem?
+A: If \theta_{01} + \theta_{10} - \theta_{11} - \theta_{00} >= 0. It means that the graph can be reparameterized to have only non-negative costs and the problem can be solved in polynomial time using the max-flow algorithm. If not, then this approach cannot be used and in general the problem is NP-hard.
+Q: Which kind of MAP- Markov random field problems can be solved with the max-flow algorithm?
+A: submodular problems
+Q: Which effect would it have to have very high pairwise costs in relation to the unary costs?
+A: The higher the pairwise costs, the smoother the solution and less influence from the observed pixel value. In the extreme case the solution will be a uniform field of labels, where the unary cost only determine the polarity.
+Q: How do you transform the markov random fields to a min-cut problem in the case that each pixel has multiple labels?
+A: Graph has source, sink + k+1 * n nodes for n pixels and k states. There is a node for each possible label of a pixel and one additional node with label k+1, so that there are k edges between them which have the unary cost of the pixel being labeled i. Constraint edges have to added to ensure that only a single edge associated to one pixel is part of the minimum cut. Reparametrization has to be done again.
+Q: How can reparameterization can be done for multi label max-flow?
+A: Adding alpha to the unary terms. Since each solution contains exactly one unary term every possible solution increases by alpha, but the MAP solution remains the same.
+What is the submodularity constraint for multi-label cases?
+A: Submodular problem, if P_{ab}(\beta,\gamma) + P_{ab}(\alpha,\delta) - P_{ab}(\beta,\delta) - P_{ab}(\alpha,\gamma) >= 0 for \beta > \alpha and \delta > \gamma. (Analogy to square helps to remember)
+Q: Which influence has the convexity of the cost function on the result of the denoising process?
+A: A convex function penelizes large jumps between regions higher than small jumps. This leads to smoothing of edges. Convex functions are submodular. Non-convex functions not (ALWAYS?)
+Q: Name and describe some possible cost functions.
+A: Quadratic function (convex), Truncated quadratic function (non-convex), Potts model (non-convex)
+Q: Describe Alpha Expansion. What is required for the algorithm to work? How does the graph look like?
+A: It is an approximation algorithm for determining a solution to not submodular functions. At each iteration it chooses an alpha and solves the labelling problem for labels alpha and non-alpha. The algorithn terminates when no choice of alpha causes a change. The edge cost have to form a metric.
+Q: How is the graph for alpha expansion constructed and how does it change in each iteration? Why does the cost function have to be a metric?
 A:
 
-...
+
 
 
 

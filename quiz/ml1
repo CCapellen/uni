@@ -1,0 +1,8 @@
+Q: What error measures are there for classification and regression?
+A: Classification: 0-1 loss function \n Regression: squared error function
+Q: What is concept learning?
+A: The special case when there are two classes
+Q: Describe the TDIDT for discrete attributes
+A:
+Q: Define Entropy, conditional entropy and information gain and describe what they measure (the relationship to shannon information content)
+A:
