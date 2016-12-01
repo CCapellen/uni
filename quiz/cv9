@@ -1,0 +1,42 @@
+Q: From which parts consists a typical model for temporal estimation/tracking?
+A: Measurement model + temporal model
+Q: What is a temporal model?
+A: describes the realtionship between states w_t
+Q: What is a measurement model?
+A: describes the reationship between measurement x_t and state w_t at time t. It is a generative model and models Pr(x_t,w_t). We assume that x_t is only dependend on w_t and conditionally independent of w_i for i != t.
+Q: What is a generative model?
+A: A model which models the probability of data given a state. (is this correct?)
+Q: What does The Markov Asumption assume?
+A: The state only depends on its predecessor.
+Q: How can you model the temporal model with a recursive estimation?
+A: You can estimate the world states though two alternating seps: In the prediction step, we compute the propr Pr(w_t|x_{1...t-1) using the Chapman-Kolmogorov relation. In the measurement incorporation step we combine his propr with the newinformatino from the measurement x_t using Bayes's rule.
+Q: What is the Chapman-Kolmogorov equation?
+A: The probability of the world state at time t given the data at all times up to t-1: Pr(w_t|x_{1...t-1}) = \integral Pr(w_t,w_t-1)Pr(w_{t-1}|x_{1...t-1})dw_{t-1}. The first term represents the prediction for the state at time t given a known state. The second term represents the uncertainty about what the state actually was at time t-1.
+Q: What problems might arise with temporal models and how can you solve them?
+A:
+Q: Describe Kalman Filter.
+A:
+Q: What is the final Kalman Filter Equation?
+A:
+Q: What is smoothing? How is it integrated into the temporal model?
+A:
+Q: Which parameters can you learn for the Kalman filter. How?
+A:
+Q: Which problems are there with the Kalman filter?
+A:
+Q: What is the extended Kalman Filter. Why is it better than the normal Kalman Filter?
+A:
+Q: How is a jacobian matrix defined?
+A:
+Q: Sketch the Algorithm for the iterated extended Kalman filter
+A:
+Q: What problems are there with the extended Kalman filter?
+A:
+Q: What is the unscented Kalman filter?
+A:
+Q: What problems are the with unscented Kalman filters?
+A:
+Q: What is a particle filter?
+A:
+Q:
+

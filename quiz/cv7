@@ -42,6 +42,8 @@ Q: Describe Alpha Expansion. What is required for the algorithm to work? How doe
 A: It is an approximation algorithm for determining a solution to not submodular functions. At each iteration it chooses an alpha and solves the labelling problem for labels alpha and non-alpha. The algorithn terminates when no choice of alpha causes a change. The edge cost have to form a metric.
 Q: How is the graph for alpha expansion constructed and how does it change in each iteration? Why does the cost function have to be a metric?
 A:
+Q: From which directions should the cuts be made? Why?
+A:
 
 
 

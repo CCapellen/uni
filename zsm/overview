@@ -120,7 +120,7 @@ topics:
 
 
 lecture 10 (22.11.16)
-source: 
+source: (Brunn Minkowski: Jiri Matousek - Lectures on discrete Geometry )
 topics: 
 	interlude: trapezoidal decomposition of curvy things
 	Trapezoidal decompositions of simple polygons
@@ -134,6 +134,21 @@ topics:
 		k=2,d>=2
 		
       
-           
+lecture 11 (24.11.16)
+source: Jiri Matousek - Lectures on discrete Geometry
+topics: continuation proof of Brunn-Minkowski inequality
+	application to bread cutting
+	Brunn's theorem + Proof
+	Sorting with Posets
+     
+
+lecture 12 (29.11.16)
+source: Jiri Matousek - Lectures on discrete Geometry
+topics: Efficient comparism theorem
+		Definition order Polytope + Example
+		Def upper-bounded
+		Lemma 1 + Proof    
+		Lemma 2 + Proof
+		Lemma 3 + 
             
             

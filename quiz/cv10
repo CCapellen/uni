@@ -1,0 +1,5 @@
+Q: What is shape
+A: Whatever is invariant to a similarity transformation (rotation, scale, location)
+Q: What are landmark points? 
+A: discrete samples which get interpolated (or splined) to form the contour
+Q:
