@@ -9,7 +9,7 @@ A: A model which models the probability of data given a state. (is this correct?
 Q: What does The Markov Asumption assume?
 A: The state only depends on its predecessor.
 Q: How can you model the temporal model with a recursive estimation?
-A: You can estimate the world states though two alternating seps: In the prediction step, we compute the propr Pr(w_t|x_{1...t-1) using the Chapman-Kolmogorov relation. In the measurement incorporation step we combine his propr with the newinformatino from the measurement x_t using Bayes's rule.
+A: You can estimate the world states through two alternating steps: In the prediction step, we compute the prior Pr(w_t|x_{1...t-1) using the Chapman-Kolmogorov relation. In the measurement incorporation step we combine his prior with the new information from the measurement x_t using Bayes's rule.
 Q: What is the Chapman-Kolmogorov equation?
 A: The probability of the world state at time t given the data at all times up to t-1: Pr(w_t|x_{1...t-1}) = \integral Pr(w_t,w_t-1)Pr(w_{t-1}|x_{1...t-1})dw_{t-1}. The first term represents the prediction for the state at time t given a known state. The second term represents the uncertainty about what the state actually was at time t-1.
 Q: What problems might arise with temporal models and how can you solve them?
@@ -36,7 +36,7 @@ Q: What is the unscented Kalman filter?
 A:
 Q: What problems are the with unscented Kalman filters?
 A:
-Q: What is a particle filter?
-A:
+Q: What is a particle filter? Sketch the algorithm. What are their (dis-)advantages?
+A: It represents the probability distribution as a set of weighted particles. The density of the particles is equivalent to the probability. Algorithm: Initializitation: Sample from initial probability distribution. After that loop through the steps: Prediction, Update and Resample Advantage is that it can represent non-Gaussian multimodal densities. A disadvantage is that it is expensive.
 Q:
 

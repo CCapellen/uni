@@ -1,0 +1,6 @@
+Q: What is regularization?
+A: Loose definition: Form of modification to a learning algorithm intended to reduce its generalization error but not training error
+Q: Which general strategies are there for regularization (meaning which parts could you try to change)? Which specific strategies are there for Deep neural networks?
+A: Extra constraints on the model parameters and 2) extra terms in the objective (similar to soft constraints on the parameters)
+Q: Why is there a tradeoff between bias and variance? which model does which?
+A:

@@ -1,0 +1,15 @@
+Q: How do you do a robust feature-based alignment?
+A:
+Q: What is warping?
+A: any kind of transformation, points are matched to points and keep their colour (can be lost though) ??
+Q: What does RANSAC do? Why do you use it?
+A: outliers affect least squares fit. RANSAC = RANdom Sample Consensus: 1. Randomly select a seed group of points on which to base transfomation estimate\n 2. Compute transformation from seed group \n 3. Find inliers to this transformation \n 4. If the number of inliers is sufficiently large re-compute estimate of transformation on all of the inliers
+Q: How many samples do you need on average for RANSAC IS THAT THE RIGHT QUESTION?
+A:
+Q: What are advantages and disatvantages of RANSAC?
+A:
+Q: What is a homography?
+A:
+Q: State RANSAC for estimating homographies
+A:
+

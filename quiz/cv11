@@ -1,0 +1,23 @@
+Q: What is feature based alignment?
+A:
+Q: How can you detect local invariant features?
+A: 1) Detection: Identify the interest points \n 2) Description: Extract vector feature descriptor surrounding each interest point \n 3) Matching:Determine correspondence between descriptors in two views
+Q: What are desired properties of local features?
+A: Repeatability: The same feature can be found in several images despite geometric and photometric transformations, Saliency: each feature has a distinctive description, Locality: A feature occupies a relatively small area of the image; robust to clutter and occlusion, 
+Q: How can you find good interest points? What properties should they have?
+A: Corners are good interest points because they are easy to recognize also with little surroundings
+Q: What does the Förstner-Operator do? Why does it work?
+A: https://de.wikipedia.org/wiki/Interest-Operator#F.C3.B6rstner-Operator
+Q: How does the Harris corner detector work? What properties does it have?
+A: 1) Use M to compute a cornerness score for each image window. \n 2) Threshold these scores to find the points with the largest corner  responses. \n 3) Perform non-maximum-suppression \n It is rotation invariant but not scale invariant (sheet 33)
+Q: What is automatic scale selection?
+A:
+Q: What is scale invariant blob detection?
+A:
+Q: What is the SIFT descriptor? What properties does it have?
+A: it creates a normalized histogram for the gradient orientations of pixels in a subpatch. All entries above 0.2 are set to 0.2 to reduce the impact of very strong gradients. Normalize again to 1. Rotate patch according to its dominant gradient orientation. Invariant to scale and rotation. 
+Q: What other feature descripotrs are there?
+A:
+Q: How can you match local features robustly?
+A: Consider ratio: distance to best match / distance to second best match
+

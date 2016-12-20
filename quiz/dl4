@@ -1,27 +1,38 @@
 Q: What is a directional derivative?
 A: the instantaneous rate of change of a function f in the direction of unit vector u
 Q: slide 15. What? steps in the equation?
-A:
+A: probably not that important
 Q: How is the jacobian matrix defined?
-A:
+A: Element (i,j) is the derivative of output x_i with respect to input x_j
 Q: How is the hessian matrix defined?
+A: Element (i,j) is f(x) derived with respect tor x_i and x_j
+Q: What are the eigenvectors of the hessians?
 A:
 Q: Define a cost function derived from maximum likelihood
 A:
+Q: Howcould you estimate the mean of a conditional Gaussian distribution using output units?
+A: slide 27
 Q: What is the connection between the gradients of activation functions and their ability to learn?
 A:
 Q: Define the sigmoid function, and sketch
-A:
+A: binary: logistic sigmoid function; multi-class: soft_max: \frac{exp(a_c)}{\sum_b exp(-a_b)
 Q: Define the softplus function, and sketch
-A:
+A: s(x) = log(1+exp(x)) (slide 29)
 Q: What are good applications for sigmoid and softplus function?
 A:
 Q: Define and sketch a rectified linear unit
-A:
+A: z = max{0,a}
 Q: What variants of Rectified linear units are there?
-A:
+A: with slope, absolute value rectification, leaky ReLU, parametric ReLU
+Q: What are disatvantages of sigmoid functions?
+A: They saturate and are only sensitive when the input is near zero, which makes it difficult to apply gradient-based learning unless there is an appropriate cost function (like maximum likelihood)
 Q: What is a Maxout unit?
+A: generalize ReLUs: divides a into groups of k values, each maxout unit outputs the max of one of these groups, learns a piecewise, linear, convex function. Each unit has k weight vectors
+Q: What is catastrophic forgetting?
 A:
+Q: Which other hidden units are there? Pros and Cons?
+A: 
+
  
 
 
