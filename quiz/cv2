@@ -1,0 +1,32 @@
+Q: Give the formula on how to blend to images linearly
+A: g(x) = (1-a)*f(x) + a*g(x)
+Q: Give the formula for gamma correction
+A: g(x) = f(x)^(1/gamma)
+Q: Give the formula for histogram equalization
+A: h(f(x)) = F(f(x))*255; F(y) = \sum_{y'}^y p(y') the cumulative distribution function and p(y) = \frac{|x \in \Omega : f(x)=y|}{|\Omega|} the histogram.
+Q: Define convolution (formula). What properties does it have?
+A: g(i,j) = \sum_{k,l} f(i-k,j-l)h(k,l) (discrete); g(x)= /integral f(x-u)h(u)du (continuous); f being the image and h the kernel. Properties: In the continuous case h is a impulse response function (h*/delta=h), Linearity, shift invariance, commutative, associative, distributes over addition, scalars factor out
+Q: Prove that convolution is shift invariant 
+A: slide 36
+Q: How is the integral image defined?
+A: s(i,j)= /sum_{k=i_0}^i_1 /sum_{l=j_0}^j_1 f(k,l) = s(i_1,j_1) - s(i_1,j_0-1) - s(i_0-1,j_1) + s(i_0-1,j_0-1) 
+Q: Design a filter to blur a picture
+A: box filter: every entry is 1/size of filter
+Q: Design a sharpening filter 
+A: Filter for doubling the picture - blurring filter (slide 82)
+Q: Design a filter for image rotation
+A: Rotation is not spatially invariant
+Q: Define the Gaussian Kernel. What properties do they have
+A: G= /frac{1}{2 /pi /sigma^2} * exp(/frac{(x^2 + y^2)}{2 /sigma^2}); set filter half-width to about 3 /sigma; Properties: Convolution with itself is another Gaussian: convolving two times with a Gaussian kernel with std /sigma is the same as convolving once with kernel /sigma*/sqrt{2}  , is a low-pass filter; is seperable
+Q: What is seperability of filters and why is it useful? How can you determine if a kernel is seperable?
+A: filter is equal to the convolution of two filters, one in x dimension, on in y; the complexity is reduced from O(n^2*m^2) to O(n^2*m); kernel is seperable if the fist singular value in the SVD is non-zero
+Q: How do you compute a SVD? What are the properties of a SVD? 
+A: It is always possible to decompose a real matrix A into A=U E V^T, where U,E,V unique, U,V column orthonormal (U^T*U=I), E diagonal: entries (singular values are positive and sorted in decreasing order) Compute SVD of A: Compute Eigenvalues of A*A^T
+Q: Compute the SVD of A = (3&2&2 // 2&3&-2)
+A: http://www.d.umn.edu/~mhampton/m4326svd_example.pdf
+Q: What kind of image noise is there. How can you reduce it?
+A: Salt and Pepper noise -(median filter), impulse noise, gaussian noise
+Q: Define the Bilateral filter
+A: wiki: a non-linear, edge-preservinf and noise-reducing smoothing filter for images https://en.wikipedia.org/wiki/Bilateral_filter
+Q: What is Erosion and Dilation?
+A: Erosion: Change a forefound pixel to backfound if it has a bakground pixel as a 4-neighbour; Dilation: Change a background pixel to foreground if it has a foreground pixel as a 4-neighbour
