@@ -1,21 +1,21 @@
 Q: What is the idea of deformable contours?
 A: Have a "elastic band" which tries to be near image positions with high gradients and satisfies shape "preferences"
 Q: What are polygonal snakes, B-Spline snakes?
-A:
+A: list of 2d points. the border can be seen as the direct connection of these points or you can find polynomials to fit these lines 
 Q: What is internal and external energy?
 A: Internal Energy: Encourages prior shape preferences (smoothness, elasticity, particular known shape) \n External Energy: encourages contour to fit on places where image structures exist (edges)
 Q: Give the formula for external energy.
 A: E(v) = -(|G_x(v)|^2 + |G_y(v)|^2) where G_x(v) and G_y(v) are the gradients
 Q: What is the formula for internal energy and what does it express?
-A: (for a curve): \sum_{i=0}{n-1} \alpha ( d - ||v_{i+1} - v{i}||)^2 + \beta ||v_{i+1} - 2v_i + v_{i-1}||^2. These reflect tension and curvature of the curve.
-Q: How can the elasticity be improved?
-A: introducing the average distance between pairs of points - updated at each iteration WHY DOES THAT HELP?
+A: (for a curve): \sum_{i=0}{n-1} \alpha ( d - ||v_{i+1} - v{i}||)^2 + \beta ||v_{i+1} - 2v_i + v_{i-1}||^2 where d is the average distance between pairs of points - updated at each iteration. These reflect tension and curvature of the curve.
+Q: Why use the average distance between pairs of points in the formula for the internal energy?
+A: 
 Q: What is the formula for the total energy function and what are the parameters?
-A: E_tot = E_internal + \gamma * E_external, alpha, beta und gamma: alpha controls internal elasticity, beta the curvatureand gamma the external energy
+A: E_tot = E_internal + \gamma * E_external, alpha, beta und gamma: alpha controls internal elasticity, beta the curvature and gamma the external energy
 Q: What is the snake model?
 A:
 Q: What is the formula for the continuous snake model and what do the terms mean?
-A: FORMULA - External Energy + alpha * penality for lenght of contour + beta * penality for total curvature along the contour
+A: FORMULA - External Energy + alpha * penality for length of contour + beta * penality for total curvature along the contour
 Q: What algorithms are there for minimizing the energy of snakes?
 A: Greedy search, dynamic programming (2d), variational optimization
 Q: Sketch the greedy algorithm for energy minimization for snakes. What are issues?
@@ -38,6 +38,3 @@ Q: What is the geodesic length?
 A: The shortest path between two points in a curved space
 Q: Describe the level set method
 A: evolves the curve by evolving the embedding function; the level set equation tells you for how the embedding function evolves over time; with gradient descent from this you can obtain the values on how to update
-
-
-

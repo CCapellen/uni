@@ -11,4 +11,4 @@ A: Pros: -Simple and general -Works well Cons: - does not work well if there are
 Q: What is a homography? How can you solve for a homography?
 A: A projective transform between two perspective projections with the same center of projection, so that rectangles map to quadrilaterals, and straight lines are preserved. It can be expressed as a 3x3 matrix (without restrictions). Solving for homographies: define as least square problem. h is eigenvector of A^T*A with smallest eigenvalue
 Q: State RANSAC for estimating homographies
-A:same as for lines but you need four feature paris
+A:same as for lines but you need four feature pairs

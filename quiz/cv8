@@ -1,6 +1,6 @@
 Q: What is a grab cut?
 A: An interactive segmentation technique (only into forground and background): The user loosely specifies the foreground region and then an iterative graph cut is applied.
-Q: What is a mixtureof Gaussians (MoG)?
+Q: What is a mixture of Gaussians (MoG)?
 A: The data is described as a weighted sum of K normal distributions. The weights have to be positive and sum to one.
 Q: What is the idea behind hidden variables?
 A: It might be easier to express the density of some variable x by representing it as the marginalization of a joint density with a hidden variable h. 
@@ -14,5 +14,3 @@ Q: What does Jensen's Inequality say?
 A:
 Q: What is background subtraction
 A: An algorithm which tries to label every pixel binary into forground and background
-
-

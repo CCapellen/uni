@@ -36,36 +36,43 @@ def quiz():
             print('Line %s does not start with a "Q" or "A".' % line_number)
     if len(questions) != len(answers):
         raise Exception('There are not the same number of questions as answers.')
-
-    studyplan = list(range(len(questions)))
-
-    response = str(input("\nShould the questions be in random order?"))
-    if response[0] == "Y" or response[0]=="y":
-        random.shuffle(studyplan)
-    newstudyplan = []
-
+    
     print("\nWelcome to the quiz. Press q or Q to quit while in the quiz. N or n to answer no, if you didn't get the question right and it will be asked again later. \n\n")
+    
+    studyplan = list(range(len(questions)))
+    newstudyplan = []
+    
+    
+    response = str(input("\nShould the questions be in random order?"))
+    if len(response)>0:
+        if response[0] == "Y" or response[0]=="y":
+            random.shuffle(studyplan)
+
 
     while(len(studyplan)>0):
         for q in studyplan:
-            print(questions[q])
+            print('\n\n'+ questions[q])
             response = input("Do you want to see the answer?")
             if len(response)>0:
                 if response[0]=='Q' or response[0]=='q':
-                    studyplan = []
+                    studyplan = [] # then while loop stops
                     newstudyplan = []
                     break
-            print("\n" + str(answers[q]))
+            print(str(answers[q]))
             response = input("did you get it right?: ")
-        if len(response)>0:
-            if response[0]=="N" or response[0] == 'n':
-                newstudyplan.append(q)
-            print("\n\n")
+            if len(response)>0:
+	            if response[0]=="N" or response[0] == 'n':
+	                newstudyplan.append(q)
+	            elif response[0]=='Q' or response[0]=='q':
+                     studyplan = [] # then while loop stops
+                     newstudyplan = []
+                     break
         if len(newstudyplan)>1:
-            studyplan = random.shuffle(newstudyplan)
+            random.shuffle(newstudyplan)
+            studyplan = newstudyplan
             newstudyplan = []
         else:
-            studyplan = newstudyplan
+            studyplan = []
             newstudyplan = []
 
     print("You are done!!!")
