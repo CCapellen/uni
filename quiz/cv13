@@ -1,0 +1,20 @@
+Q: What are motion fields?
+A: 
+Q: What is optical flow?
+A: the apparent motion of brightness patterns in the image
+Q: Name the brightness constancy equation
+A: I(x,y,t-1) = I(x+u(x,y),y+v(x,y),t)
+Q: What can be derived from the brightness constancy equation and what does it mean intuitively?
+A:
+Q: What is the aperture problem?
+A: you want to get the optical flow, but the equation has two unknowns -> you need another constraint
+Q: What is the spatial coherence constraint?
+A: pretend the pixel's neighbors have the same (u,v) -> now too many equations -> solve least square problem; (which is not always solvable
+Q: What conditions for solvability are there for least square problem in the context of the spatial coherence constraint.
+A: 
+Q: What is the Lucas-Kanade flow? 
+A: It is a method for estimating the oprical flow (of two images?). It uses the spatial coherence constraint: It assumes that inside a window of given size the optical flow equation holds and solves this equation (in matrix form: Av=b by the least squares principle: v=(A^T*A)^-1*A^T*b
+Q: What problems are there with the Lucas-Kanade flow?
+A: 
+Q: Describe the Shi-Tomasi feature tracker
+A:

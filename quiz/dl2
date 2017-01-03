@@ -10,12 +10,12 @@ Q: what is under-/ overfitting?
 A: underfitting: Algorithm has high training error \n overfitting: Algorithm has low training error but a high test error
 Q: What is the model capacity?
 A: the capability of the algorithm to reach the correct answer?
-Q: when is the capability optimal?
+Q: when is the model capacity of a learning Algorithm optimal?
 A: When the capacity equals the complexity of the target. If the capacity is too low, then the model will underfit. If it is too high it will overfit. STILL BETTER TOO HIGH?
 Q: How do you calculate the L1 distance of two images? (How the L2)
 A: subtracting pixel wise and then adding all differences.
 Q: How works nearest neighbor estimation
-A:
+A: You check to which training instance your test instance is closest and then assign the same label
 Q: How should you choose Hyperparameters?
 A: Cross-validate. Do not use the test data.
 Q: What is a point estimator? 
@@ -34,4 +34,3 @@ Q: What is the MAP Estimation?
 A: It chooses the estimator which maximizes the probability of the estimator given the data. This can be formed to the following equation: Est_MAP = argmax_{Est} [\sum_{i=1}^m log p(x_i|Est) + log p(Est)] and for the conditional likelihood: Est_MAP = argmax_{Est} [\sum_{i=1}^m log P(y_i|x_i,Est) + log p(Est)]
 Q: What is the relation between model capacity, bias and variance?
 A:
-

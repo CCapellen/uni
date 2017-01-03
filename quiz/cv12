@@ -1,15 +1,14 @@
 Q: How do you do a robust feature-based alignment?
-A:
+A: follow something like RANSAC
 Q: What is warping?
-A: any kind of transformation, points are matched to points and keep their colour (can be lost though) ??
+A: any kind of transformation, points are matched to points and keep their colour ??
 Q: What does RANSAC do? Why do you use it?
 A: outliers affect least squares fit. RANSAC = RANdom Sample Consensus: 1. Randomly select a seed group of points on which to base transfomation estimate\n 2. Compute transformation from seed group \n 3. Find inliers to this transformation \n 4. If the number of inliers is sufficiently large re-compute estimate of transformation on all of the inliers
-Q: How many samples do you need on average for RANSAC IS THAT THE RIGHT QUESTION?
-A:
-Q: What are advantages and disatvantages of RANSAC?
-A:
-Q: What is a homography?
-A:
+Q: How many iteration should you use in RANSAC? Why?
+A: The probability to randomly choose a good sample is on average: I over m divided by N over m, where I is the number of inliers, m the size of the sample and N the number of points. That means P(good) = number of pairs of size m in set of inliers / number of all pairs of size m = /fac_{j=0}^{m-1} (I-1)/(N-j). We want to determine k so that with k iterations we drew at least one set of inliers with a probability p. Then P(bad k times) = (1-P(good))^k \leq 1-p and finally k \geq log(1-p) / log (1-P(good))
+Q: What are advantages and disadvantages of RANSAC?
+A: Pros: -Simple and general -Works well Cons: - does not work well if there are few inliers -there is still a probability that in the number of iterations there was not found any good set of samples 
+Q: What is a homography? How can you solve for a homography?
+A: A projective transform between two perspective projections with the same center of projection, so that rectangles map to quadrilaterals, and straight lines are preserved. It can be expressed as a 3x3 matrix (without restrictions). Solving for homographies: define as least square problem. h is eigenvector of A^T*A with smallest eigenvalue
 Q: State RANSAC for estimating homographies
-A:
-
+A:same as for lines but you need four feature paris
