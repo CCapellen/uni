@@ -5,12 +5,18 @@ A: The data is described as a weighted sum of K normal distributions. The weight
 Q: What is the idea behind hidden variables?
 A: It might be easier to express the density of some variable x by representing it as the marginalization of a joint density with a hidden variable h. 
 Q: What is the relation between Mixture of Gaussians as a marginalization and hidden Variables?
-A:
-Q: Describe the Expectation maximization algorithm.
-A:
-Q: How does expectation maximization work in general?
+A: MoG is a sum of single gaussians
+Q: How does expectation maximization work in general? What do you use it for?
+A: Is a tool for fitting parameters t=theta of some model which can be expressed in the form Pr(x|t) = /integral Pr(x,h|t) dh. Optimizing this using the log likelihood on Pr(x|t) gives t_{opt} = argmax_t /sum_{i=1}^I log[/int Pr(x_i,h_i|t) dh_i]. The EM algorithm defines a lower bound B on the log likelihood and iteratively increases this bound. B is a function which is guaranteed to return a value that is less than or equal to the log likelihood for any given set of parameters t. In the maximization step a parameter set is chosen so that B is maximal. In the expectation step B is manipulated by changing the probability distribution of the hidden variable, so that the value of B for the chosen (former maximal) parameter set increases.
+Q: Describe the Expectation maximization algorithm in detail.
+A: The Bound: B[{q_i(h_i)},t] = /sum_{i=1}^I /integral q_i(h_i) log[Pr(x_i,h_i|t)/q_i(h_i)] dh_i where q_i is the probability distribution over h_i. In the E-step the distribution q_i(h_i) is set to be the posterior distribution Pr(h_i|x_i,t), x being the associated data and t the current parameters. This can be computed with Bayes' rule. The maximization calculates the argmax of a simplified bound (q_i(h_i) can be eliminated because it does not depend on t).
+Q: Write down the formula for mixture of Gaussians
+A: 
+Q: Derive the expectation maximization algorithm for mixture of Gaussians.
 A:
 Q: What does Jensen's Inequality say?
 A:
 Q: What is background subtraction
 A: An algorithm which tries to label every pixel binary into forground and background
+Q: Mean shift tracking
+A:

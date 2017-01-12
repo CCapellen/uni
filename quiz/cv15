@@ -1,0 +1,10 @@
+Q: Describe the pinhole camera model and name all its parts. What properties has the projection?
+A: description should include: aperture, focal point;Projection: points to points, lines to lines (except through focal point), planes to planes(except through focal point)
+Q: state the formula for a projection of a 3d point onto the image plane. How does the Perspective Projection Matrix look like?
+A: (x,y,z) -> (f*x/z, f*y/z). slide 25
+Q: What is an orthographic projection?How does the Matrix look like?
+A: Special case of perspective projection– Distance from center of projection to image plane is infinite (slide 27)
+Q: What effect has shrinking the aperture? 
+A: picture gets less blurry, at some points diffraction effects, only little light gets through
+Q: What is a thin lens?
+A: 

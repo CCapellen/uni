@@ -1,0 +1,20 @@
+Q: What are the main ideas behind CNNs? Why are they used? (What advantages do they have?)
+A: local receptive fields, parameter sharing, equivariant representations and subsampling. because of the convolution, CNNs can deal with input of different size.
+Q: What is subsampling?
+A:
+Q: What is equivariance? When is it useful/not useful?
+A: A equivariant function: for change in input, output changes the same way; Translation equivariance: applying convolution before or after remapping (change of pixel location) has same result.
+Q: What is zero-padding and why do you use it?
+A: 
+Q: Which stages has a typical CNN layer?
+A:
+Q: What is max pooling and what properties does it have?
+A:
+Q: Why use pooling? advantages?
+A:
+Q: What is the connection between kernel filter size and number of parameters in CNN?
+A: 
+Q: Describe LeNet5
+A: 
+Q: What runtime has forward propagation in a CNN?
+A: O(k*n); n number of outputs, k 

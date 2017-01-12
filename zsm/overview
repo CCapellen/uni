@@ -150,5 +150,39 @@ topics: Efficient comparism theorem
 		Lemma 1 + Proof    
 		Lemma 2 + Proof
 		Lemma 3 + 
-            
-            
+     		Definition height of lin. extension, average height, good pair
+		Claim: if ext. not linear => there are good pairs + Proof
+
+lecture 13 (1.12.16)
+source:
+topics: claim: if (a,b) good pair => hyperplane x_a = x_b splits orderpolytope nicely
+	Lemma 4: Center of gravity of orderpolytope has coordinates (1/(1+h) h(a_i)) i /in 1,...,4 + Proof
+	Art Gallery Problem
+
+lecture 14 (6.12.16)
+source:
+topics: Definition: stabbing point, transversal, packing, 
+	Lemma: maximum size of packing v /leq minimum size of transersal T + Proof
+	Def fractional transversal, fractional packing
+	Examples of transversals
+	Theorem: v(F) /leq v*(F) = T*(F) /leq T(F)
+	Def epsilon-net + Examples
+	Def shattering, VC-dim + Examples
+	Comment 3: affine hulls
+	Theorem: X /in R^d, F={closed half-spaces in R^d} then VCdim = d+1 + Proof
+	Radons Theorem: for set A in R^d containing d+2 points, there exist disjoint subsets so that the convex hull of these subsets intersects + Proof
+	Example infinite VCdim
+
+
+lecture 15 (8.12.16)
+source:
+topics: VCdim of visibility polygons:
+		Example: d /geq 4
+		Theorem (P.Valtr): VCdim /leq 25 + Proof
+
+		
+lecture 16 (13.12.16)
+source:
+topics: def range space
+
+
