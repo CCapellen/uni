@@ -6,3 +6,5 @@ Q: Describe the TDIDT for discrete attributes
 A: recursive function; in each recursion check if node you're on is a leaf node if not split the node and recurse on children; slide 12
 Q: Define Entropy, conditional entropy and information gain and describe what they measure (the relationship to shannon information content)
 A: for Set S and Attribute A: Gain(S,A)= H(S) - H(S|A); Entropy H(S) = \sum_i p_i * log_2 (1/p_i); conditional entropy H(S|A) = \sum_{j=1}^m P(value of A=v_j) H(S_j). From information theory: Entropy(X) is equivalent to smallest possible number of bits on average per symbol needed to transmit a sequence of symbols drawn from X's distribution
+Q: State Jensens inequality
+A: for concave function (like entropy): E(f(X)) /leq f(E(X)), 

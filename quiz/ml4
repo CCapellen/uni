@@ -1,20 +1,24 @@
-Q: What is Bayes Theorem?
-A: 
-Q: What is MAP?
-A:
-Q: What is ML?
-A:
+Q: State Bayes Theorem
+A: P(h|D) = P(D|h)P(h)/P(D)
+Q: State MAP
+A: h_{MAP} = arg max h/in H P(h|D) = arg max h/in H P(D|h)P(h)
+Q: State ML
+A: Maximum likelihood P(x_i)=P(x_j) : arg max h/in H P(D|h_i)
 Q: Describe the Brute Force MAP Hypothesis Learner Algorithm
-A:
+A: 1. For each hypothesis h in H, calculate the posterior probability P(h|D). 2. Output the hypothesis h with highest h_MAP
 Q: What do they mean with ML minimizes the sum of squared errors?
-A:
+A: If you use ML on a real valued function you can reformulate the problem to argmin the sum of squared errors
 Q: Describe the Bayes optimal classifier.
 A: arg max_{v_j \in V} \sum_{h_i \in H} P(v_j|h_i) * P(h_i|D) with v_j a possible class, h_i a hypothesis and data D.
-Q: Describe and derive the Naive Bayes Classifier and algorithm. What might cause Problems? 
-A: v = argmax_{v_j \in V} P(v_j) \product_i P(a_i|v_j); conditional independenceassumption is often violated, but it still might work quite well; It's possible that none of the training instances with a target calue v_j have attribute value a_i and then P(a_i|v_j) = 0.
+Q: Describe and derive the Naive Bayes Classifier and algorithm. Which assumption is made? What might cause Problems? 
+A: v = argmax_{v_j \in V} P(v_j) \product_i P(a_i|v_j); Assumption: P(a1,a1,...,an|)conditional independence assumption is often violated, but it still might work quite well; It's possible that none of the training instances with a target calue v_j have attribute value a_i and then P(a_i|v_j) = 0.
 Q: How can you represent text?
 A: Bag-of-Word Approach
 Q: What are Bayesian Belief Networks?
 A: 
-
-
+Q: state definition of a more general concept
+A: h1 is more general than h2 iff for all x /in X: h_2(x)=1 -> h1(x)=1
+Q: What is the definition of Version Space?
+A: with respect to Hn and D: set of hypothesis in Hn which are consistent with D: VS_{H_n,D} = {h /in H_n : h(~x_i) = c(~x_i) for all <h~x_i , c(~x_i)> i /in D}
+Q: What is a partial order?
+A: reflexive, transitive, antisymmetric

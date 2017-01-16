@@ -1,3 +1,22 @@
 Q: When ist a concept class c polynomially PAC-learnable?
 A:
-
+Q: What does the Thm. of Blumer, Ehrenfeucht, ... say?
+A: Algorithm A is PAC-learning algorithm if it takes as input a set S of m labeled examples of a concept c /in C and outputs a concept h /in C that is consistent with S and m is greater equal to something dependend on VCdim of C 
+Q: What is the definition of consistent?
+A: H /in C is consistent with S if h(x) = c(x) for all x,c(x) /in S
+Q: When is C polynomially PAC-learnable?
+A: 1. VCdim(C) is bounded by a polynomial of the parameters of C and 2. finding a consistent hypothesis is solvable in time polynomial in |S| and parameters of C
+Q: Show: Let C subset of {0,1}^n be concept calss of conjunctions over n Boolean variables. Then VCdim(C) /leq 2n
+A: slide 9
+Q:Show finding a consistent hypothesis for conjunctions is solvable in polynomial time
+A: slide 10
+Q: Show: half-spaces of R^d are efficiently PAC-learnable
+A: slide 12
+Q: How is /Pi_C(S) defined, how /Pi_C(m)
+A: /Pi_C(S) = {c intersected S : c /in C} is the set of subsets from S which can be realized through concepts of class C; /Pi_C(m) = max{|/Pi_C(S)| : S subset of X, |S| = m} is the size of the biggest set /Pi_C(S), so that S has size m, and S is subset of X
+Q: What does the Perles-Shelah, Sauer, VC Thm say?
+A: for d=VCdim(C) > 0: 1. /Pi_C(m) = 2^m if m/leq d; 2. /Pi_C(m) /leq (me/d)^d otherwise
+Q: What is thing with the epsilon net?
+A:
+Q: What is the Double Sampling technique?
+A:
