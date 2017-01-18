@@ -6,3 +6,5 @@ Q: What does the information gain mean informally?
 A: Gain(X|Y): How much reduction in entropy would you get by knowing Y
 Q: How is Gain Ratio defined, what does it mean and what is the advantage to the information gain?
 A: GainRation(S,A) = Gain(S,A)/SplitInfo(S,A) where SplitInfo(S,A) = - \sum_{i=1}^m (|S_i|/|S|) * log_2  (|S_i|/|S|). The SplitInformation is the entropy of S with respect ot the values of A 
+Q: How can you determine a good split in a decision tree for continuous variables
+A: expert preprocessing, automatic preclustering, search at split time: 1. sort examples covered by the current node according to the calues of A, 2: for all adjacent examples with different classes do: 3: take the mean m of the values of A for the two examples, 4: calculate the information gain for the split A<m for the current node end for; 5: return A<c that maximizes the information gain
