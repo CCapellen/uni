@@ -1,0 +1,14 @@
+Q: state the perceptron training rule
+A: wi <- wi + /delta wi; /delta wi = learning rate (target value - perceptron output) xi
+Q: explain Gradient decent and the training rules
+A: you use an error function E. w_i is then updated by /delta w_i = - learning rate * the derivative of E with respect to w_i
+Q: state the gradient descent algorithm
+A: slide 13
+Q: What are the conditions for the succes of the perceptron training rule?
+A: training examples must be linearly seperable and the learning rate must be sufficiently small
+Q: state sigmoid function, what is the derivative?
+A: /sigma(x) = 1/(1+exp(-x)); /sigma'(x) = /sigma(x)*(1-/sigma(x))
+Q: What is the error gradient for a sigmoid function?
+A: slide 19
+Q: state the backprop algorithm
+A: slide 22

@@ -7,4 +7,26 @@ A: Special case of perspective projection– Distance from center of projection 
 Q: What effect has shrinking the aperture? 
 A: picture gets less blurry, at some points diffraction effects, only little light gets through
 Q: What is a thin lens?
-A: 
+A: Rays passing through the center are not deviated (pinhole projection model still holds).All parallel rays converge to one point on a plane located at the focal length f
+Q: What is the thin lense formula? Derive it
+A: it gives the relation between distance of the object to the camera D, distance at which the object will be in focus D' and focal length f: any point satisfying (1/D') + (1/D) = 1/f is in focus. Derivation (slide 40,..)
+Q: What is the depth of field and how can you control it?
+A: it is the range in which the seen objects are approximately in focus? You can control it by adding a pinhole and varying thesize of the aperture. Smaller aperture increases the depth of field.
+Q: What is the field of view and how can you calculate it?
+A: it depends on the focal length f and the size of the camera retina (sensor) d: angle (half of full pic) = atan(d/(2f))
+Q: What is the Dolly effect?
+A:
+Q: Describe some lense flaws:
+A: Chromatic Aberration (color fringing), spherical aberration, vignetting, radial distortion,
+Q: What is color moire?
+A: fine black and white dtail in image gets misinterpreted as color information
+Q: What kind of sensors are common in digital cameras? How do they work?
+A: CCD: Charge Coupled Decise has a frid of color filters (2x more green than red and blue). missing components are estimated from neighboring values (demosaicing), CMOS: Complementary metal oxide smiconductor: has 3 silicon sensors stacked, using that red, blue and green light penetrates silicon to different depths
+Q: What are light field cameras?
+A: some camera with a big filed of depth. (You can build your own by adding a pinhole in front of your camera)
+Q: Which methods are there for depth estimation?
+A: Stereo Cameras, Laser Scanner, projecting patterns onto objects, infrared laser light with speckle pattern (form of stereo), time of flight
+Q: How does time-of-flight work?
+A:
+Q: How does time-of-flight perform in comparism with structured ligth. What are issues?
+A:

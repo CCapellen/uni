@@ -1,0 +1,12 @@
+Q: what is disparity?
+A: from two viewpoints objects are seen from different visual angles, when viewers fixate on the same object
+Q: What are random dot stereograms
+A: pair of synthetic images obtained by randomly spraying black dots on white objects; used to se if we identify local brightness patterns before fusion (monocular process) or after (binocular)
+Q: Describe the basic stereo matching algorithm
+A: For each pixel in the first image – Find corresponding epipolar line in the right image – Examine all pixels on the epipolar line and pick the best match – Triangulate the matches to get depth information
+Q: When are the epipolar lines scanlines? 
+A: when the images planes are parallel, the center at the same height and the focal lenghts the same
+Q: What is the essential matrix?
+A:
+Q: How can you get the depth from the disparity?
+A:
