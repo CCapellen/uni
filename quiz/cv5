@@ -1,9 +1,9 @@
 Q: What algorithms are there for segmentation?
 A: -
 Q: How does k-means work?
-A: -
+A: You intialize k random centers. You assign each point to the center it is closest to. you shift the center to the centroid of the points it owns 
 Q: What is Agglomerative Clustering?
-A: All points start as a cluster, in each step merge closest points to one cluster, until only one cluster is left (use proximity Matrix)
+A: All points start as their own cluster, compute proximity matrix, merge two closest points, recompute the proximity matrix
 Q: What is Ward's Method? And why is it used?
 A: It is a similarity measure which is less suceptible to noise and outliers. It is based on the increase in squared error when two clusters are merged (\triangle(A,B) = sum_{i\in A or B} ... )
 Q: What does the Mean shift algorithm do?

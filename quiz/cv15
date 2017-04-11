@@ -15,7 +15,7 @@ A: it is the range in which the seen objects are approximately in focus? You can
 Q: What is the field of view and how can you calculate it?
 A: it depends on the focal length f and the size of the camera retina (sensor) d: angle (half of full pic) = atan(d/(2f))
 Q: What is the Dolly effect?
-A:
+A: zooming while the camera moves closer or away
 Q: Describe some lense flaws:
 A: Chromatic Aberration (color fringing), spherical aberration, vignetting, radial distortion,
 Q: What is color moire?
@@ -27,6 +27,6 @@ A: some camera with a big filed of depth. (You can build your own by adding a pi
 Q: Which methods are there for depth estimation?
 A: Stereo Cameras, Laser Scanner, projecting patterns onto objects, infrared laser light with speckle pattern (form of stereo), time of flight
 Q: How does time-of-flight work?
-A:
+A: light is emitted and the time is measured until the light returns to the sensor. using the speed of light the distance can be calculated. There are different ways to measure the time. one uses the phase of the light.
 Q: How does time-of-flight perform in comparism with structured ligth. What are issues?
-A:
+A: Issues for both are direct sunlight, missing data

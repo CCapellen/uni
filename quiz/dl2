@@ -19,18 +19,18 @@ A: You check to which training instance your test instance is closest and then a
 Q: How should you choose Hyperparameters?
 A: Cross-validate. Do not use the test data.
 Q: What is a point estimator? 
-A: A function of the data which estimates a single value which serves as best estimate for an unknown parameter or function. (It only gives one point estimation in contrast to a possible interval)
+A: A function of the data which estimates a single value which serves as best estimate for an unknown parameter or function. (It only gives one point estimation in contrast to a possible interval, it does not have to be a good estimate, but it only gives one estimate)
 Q: What is function approximation?
-A: Approximates the true f with a f* based on some model, which is usually predetermined, so it can be simplified to point esteimation of the function parameter.
+A: book: estimates the relationship between input and target variables. lecture: Approximates the true f with a f* based on some model, which is usually predetermined, so it can be simplified to point estimation of the function parameter.
 Q: How is the bias defined? When is the estimator unbiased, when asymptotically unbiased?
 A: Bias(Estimator) = E(Estimator) - true value; The estimator is unbiased if the difference between the expectation and true value is zero. It is asymptotically unbiased if the bias is zero only if m->inf ???
 Q: How is the variance defined? How the standard error?
 A: Var(Est_m) = E[(Est - E[Est])^2] = E[Est^2] - (E[Est])^2. The standart error is the square root of the variance.
 Q: How is the mean squared error defined?
 A: MSE(Est_m)  = E[(Est-true)^2] = Bias(Est_m)^2 + Var(Est_m)
-Q: How works maximum likelihood estimation?
-A: You look for the estimator which maximizes the joint probability of the data and the estimator. Est_ML = argmax_{Est} p_model(data,Est) = argmax_{Est} \product_{i=1}^{m} p_model(data_i, Est) = argmax_{est} \sum_{i=1}^m log p_model(x_i,est). Similarily for p(Y|data,Est): Est_ML = argmin_{Est} -\sum_{i=1}^m log p(y_i|data_i,Est)
+Q: How works maximum likelihood estimation? When does it converge to the true value?
+A: You look for the estimator which maximizes the joint probability of the data and the estimator. Est_ML = argmax_{Est} p_model(data,Est) = argmax_{Est} \product_{i=1}^{m} p_model(data_i, Est) = argmax_{est} \sum_{i=1}^m log p_model(x_i,est). Similarily for p(Y|data,Est): Est_ML = argmin_{Est} -\sum_{i=1}^m log p(y_i|data_i,Est). It converges to the true value if pdata lies in the model family, and pdata corresponds to exactly one value of est.
 Q: What is the MAP Estimation?
 A: It chooses the estimator which maximizes the probability of the estimator given the data. This can be formed to the following equation: Est_MAP = argmax_{Est} [\sum_{i=1}^m log p(x_i|Est) + log p(Est)] and for the conditional likelihood: Est_MAP = argmax_{Est} [\sum_{i=1}^m log P(y_i|x_i,Est) + log p(Est)]
 Q: What is the relation between model capacity, bias and variance?
-A:
+A: increasing capacity tends to increase variance and decrease bias

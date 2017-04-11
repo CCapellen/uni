@@ -7,9 +7,11 @@ A:
 Q: What is the difference between output units and hidden units and what activation functions are commonly used for them?
 A: 
 Q: Why is it important to use activations which are non-linear?
-A:
+A: succesion of nonlinear activations collapses to one activation
 Q: What is a Sparse Network? 
 A:
+Q: What is the connection between using sigmoidal activation functions and skip layer connections?
+A: sigmoid function is almost linear if the weights are small, then layers can 'collaps'
 Q: What is a feed-forward architecture?
 A:
 Q: What is the Weight-Space Symmetry?

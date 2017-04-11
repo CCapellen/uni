@@ -1,4 +1,4 @@
-Q: Give the formula on how to blend to images linearly
+Q: Give the formula on how to blend two images linearly
 A: g(x) = (1-a)*f(x) + a*g(x)
 Q: Give the formula for gamma correction
 A: g(x) = f(x)^(1/gamma)
@@ -6,7 +6,7 @@ Q: Give the formula for histogram equalization
 A: h(f(x)) = F(f(x))*255; F(y) = \sum_{y'}^y p(y') the cumulative distribution function and p(y) = \frac{|x \in \Omega : f(x)=y|}{|\Omega|} the histogram.
 Q: Define convolution (formula). What properties does it have?
 A: g(i,j) = \sum_{k,l} f(i-k,j-l)h(k,l) (discrete); g(x)= /integral f(x-u)h(u)du (continuous); f being the image and h the kernel. Properties: In the continuous case h is a impulse response function (h*/delta=h), Linearity, shift invariance, commutative, associative, distributes over addition, scalars factor out
-Q: Prove that convolution is shift invariant 
+Q: Prove any shift-invariant operator can be represented as a  convolution.
 A: slide 36
 Q: How is the integral image defined?
 A: s(i,j)= /sum_{k=i_0}^i_1 /sum_{l=j_0}^j_1 f(k,l) = s(i_1,j_1) - s(i_1,j_0-1) - s(i_0-1,j_1) + s(i_0-1,j_0-1) 
@@ -29,4 +29,4 @@ A: Salt and Pepper noise -(median filter), impulse noise, gaussian noise
 Q: Define the Bilateral filter
 A: wiki: a non-linear, edge-preservinf and noise-reducing smoothing filter for images https://en.wikipedia.org/wiki/Bilateral_filter
 Q: What is Erosion and Dilation?
-A: Erosion: Change a forefound pixel to backfound if it has a bakground pixel as a 4-neighbour; Dilation: Change a background pixel to foreground if it has a foreground pixel as a 4-neighbour
+A: Erosion: Change a forefound pixel to backfound if it has a background pixel as a 4-neighbour; Dilation: Change a background pixel to foreground if it has a foreground pixel as a 4-neighbour
