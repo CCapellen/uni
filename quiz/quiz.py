@@ -94,6 +94,7 @@ def sort_word_list():
                 break
 
     print("You are done!!!")
+    save_dict(categories)
     return categories
             
 def quiz():
