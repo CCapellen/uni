@@ -1,0 +1,414 @@
+Q:  I
+A:  	minä
+Q:  you (singular)
+A:  	sinä
+Q:  he
+A:  	hän
+Q:  we
+A:  	me
+Q:  you (plural)
+A:  	te
+Q:  they
+A:  	he, ne
+Q:  this
+A:  	tämä
+Q:  that
+A:  	tuo, se
+Q:  here
+A:  	täällä
+Q:  there
+A:  	tuolla, siellä
+Q:  who
+A:  	kuka, joka
+Q:  what
+A:  	mikä, mitä
+Q:  where
+A:  	missä
+Q:  when
+A:  	koska, milloin, kun
+Q:  how
+A:  	kuinka
+Q:  not
+A:  	ei
+Q:  all
+A:  	kaikki
+Q:  many
+A:  	monta, paljon
+Q:  some
+A:  	jokin
+Q:  few
+A:  	vähän
+Q:  other
+A:  	muu, toinen
+Q:  one
+A:  	yksi
+Q:  two
+A:  	kaksi
+Q:  three
+A:  	kolme
+Q:  four
+A:  	neljä
+Q:  five
+A:  	viisi
+Q:  big
+A:  	iso, suuri
+Q:  long
+A:  	pitkä
+Q:  wide
+A:  	leveä
+Q:  thick
+A:  	paksu
+Q:  heavy
+A:  	raskas
+Q:  small
+A:  	pieni
+Q:  short
+A:  	lyhyt
+Q:  narrow
+A:  	kapea
+Q:  thin
+A:  	ohut
+Q:  woman
+A:  	nainen
+Q:  man (male)
+A:  	mies
+Q:  person
+A:  	ihminen
+Q:  child (a youth)
+A:  	lapsi
+Q:  wife
+A:  	vaimo
+Q:  husband
+A:  	mies
+Q:  mother
+A:  	äiti
+Q:  father
+A:  	isä
+Q:  animal
+A:  	eläin
+Q:  fish
+A:  	kala
+Q:  bird
+A:  	lintu
+Q:  dog
+A:  	koira
+Q:  louse
+A:  	täi
+Q:  snake
+A:  	käärme
+Q:  worm
+A:  	mato
+Q:  tree
+A:  	puu
+Q:  forest
+A:  	metsä
+Q:  stick (of wood)
+A:  	keppi
+Q:  fruit
+A:  	hedelmä
+Q:  seed
+A:  	siemen
+Q:  leaf
+A:  	lehti
+Q:  root
+A:  	juuri
+Q:  bark (of tree)
+A:  	kuori
+Q:  flower
+A:  	kukka
+Q:  grass
+A:  	ruoho
+Q:  rope
+A:  	köysi
+Q:  skin (of a person)
+A:  	iho
+Q:  meat
+A:  	liha
+Q:  blood
+A:  	veri
+Q:  bone
+A:  	luu
+Q:  fat (noun)
+A:  	rasva
+Q:  egg
+A:  	muna
+Q:  horn
+A:  	sarvi
+Q:  tail
+A:  	häntä
+Q:  feather
+A:  	sulka
+Q:  hair
+A:  	karva, hius
+Q:  head
+A:  	pää
+Q:  ear
+A:  	korva
+Q:  eye
+A:  	silmä
+Q:  nose
+A:  	nenä
+Q:  mouth
+A:  	suu
+Q:  tooth
+A:  	hammas
+Q:  tongue
+A:  	kieli
+Q:  fingernail
+A:  	kynsi
+Q:  foot
+A:  	jalka
+Q:  leg
+A:  	sääri
+Q:  knee
+A:  	polvi
+Q:  hand
+A:  	käsi
+Q:  wing
+A:  	siipi
+Q:  belly
+A:  	maha
+Q:  guts
+A:  	suolisto
+Q:  neck
+A:  	kaula
+Q:  back
+A:  	selkä
+Q:  breast
+A:  	rinta
+Q:  heart
+A:  	sydän
+Q:  liver
+A:  	maksa
+Q:  to drink
+A:  	juoda
+Q:  to eat
+A:  	syödä
+Q:  to bite
+A:  	purra
+Q:  to suck
+A:  	imeä
+Q:  to spit
+A:  	sylkeä
+Q:  to vomit
+A:  	oksentaa
+Q:  to blow (as wind)
+A:  	puhaltaa
+Q:  to breathe
+A:  	hengittää
+Q:  to laugh
+A:  	nauraa
+Q:  to see
+A:  	nähdä
+Q:  to hear
+A:  	kuulla
+Q:  to know (a fact)
+A:  	tietää
+Q:  to think
+A:  	ajatella
+Q:  to smell (sense odor)
+A:  	haistaa
+Q:  to fear
+A:  	pelätä
+Q:  to sleep
+A:  	nukkua
+Q:  to live
+A:  	elää
+Q:  to die
+A:  	kuolla
+Q:  to kill
+A:  	tappaa
+Q:  to fight
+A:  	taistella
+Q:  to hunt (transitive)
+A:  	metsästää
+Q:  to hit
+A:  	lyödä
+Q:  to cut
+A:  	leikata
+Q:  to split
+A:  	halkaista
+Q:  to stab (or stick)
+A:  	pistää
+Q:  to scratch (an itch)
+A:  	raapia
+Q:  to dig
+A:  	kaivaa
+Q:  to swim
+A:  	uida
+Q:  to fly
+A:  	lentää
+Q:  to walk
+A:  	kävellä
+Q:  to come
+A:  	tulla
+Q:  to lie (as on one's side)
+A:  	maata
+Q:  to sit
+A:  	istua
+Q:  to stand
+A:  	seisoa
+Q:  to turn (change direction)
+A:  	kääntää
+Q:  to fall (as in drop)
+A:  	pudota
+Q:  to give
+A:  	antaa
+Q:  to hold (in one's hand)
+A:  	pitää
+Q:  to squeeze
+A:  	puristaa
+Q:  to rub
+A:  	hieroa
+Q:  to wash
+A:  	pestä
+Q:  to wipe
+A:  	pyyhkiä
+Q:  to pull
+A:  	vetää, kiskoa
+Q:  to push
+A:  	työntää
+Q:  to throw
+A:  	heittää
+Q:  to tie
+A:  	sitoa
+Q:  to sew
+A:  	ommella
+Q:  to count
+A:  	laskea
+Q:  to say
+A:  	sanoa
+Q:  to sing
+A:  	laulaa
+Q:  to play
+A:  	pelata, soittaa
+Q:  to float
+A:  	kellua
+Q:  to flow
+A:  	virrata
+Q:  to freeze
+A:  	jäätyä
+Q:  to swell
+A:  	paisua
+Q:  sun
+A:  	aurinko
+Q:  moon
+A:  	kuu
+Q:  star
+A:  	tähti
+Q:  water
+A:  	vesi
+Q:  rain
+A:  	sade
+Q:  river
+A:  	joki
+Q:  lake
+A:  	järvi
+Q:  sea (as in ocean)
+A:  	meri
+Q:  salt
+A:  	suola
+Q:  stone
+A:  	kivi
+Q:  sand
+A:  	hiekka
+Q:  dust
+A:  	pöly
+Q:  earth (as in soil)
+A:  	maa, multa
+Q:  cloud
+A:  	pilvi
+Q:  fog
+A:  	sumu
+Q:  sky
+A:  	taivas
+Q:  wind (as in breeze)
+A:  	tuuli
+Q:  snow
+A:  	lumi
+Q:  ice
+A:  	jää
+Q:  smoke
+A:  	savu
+Q:  fire
+A:  	tuli
+Q:  ash
+A:  	tuhka
+Q:  to burn (intransitive)
+A:  	palaa
+Q:  road
+A:  	tie
+Q:  mountain
+A:  	vuori
+Q:  red
+A:  	punainen
+Q:  green
+A:  	vihreä
+Q:  yellow
+A:  	keltainen
+Q:  white
+A:  	valkoinen
+Q:  black
+A:  	musta
+Q:  night
+A:  	yö
+Q:  day (daytime)
+A:  	päivä
+Q:  year
+A:  	vuosi
+Q:  warm (as in weather)
+A:  	lämmin
+Q:  cold (as in weather)
+A:  	kylmä
+Q:  full
+A:  	täysi
+Q:  new
+A:  	uusi
+Q:  old
+A:  	vanha
+Q:  good
+A:  	hyvä
+Q:  bad
+A:  	paha, huono
+Q:  rotten (as a log)
+A:  	mätä
+Q:  dirty
+A:  	likainen
+Q:  straight
+A:  	suora
+Q:  round
+A:  	pyöreä
+Q:  sharp (as a knife)
+A:  	terävä
+Q:  dull (as a knife)
+A:  	tylsä
+Q:  smooth
+A:  	tasainen, sileä
+Q:  wet
+A:  	märkä
+Q:  dry (adjective)
+A:  	kuiva
+Q:  right (correct)
+A:  	oikea
+Q:  near
+A:  	lähellä
+Q:  far
+A:  	kaukana
+Q:  right (side)
+A:  	oikea
+Q:  left (side)
+A:  	vasen
+Q:  at
+A:  	-ssa, -lla
+Q:  in
+A:  	-ssa, -lla, -Vn, -lle
+Q:  with (accompanying)
+A:  	kanssa
+Q:  and
+A:  	ja
+Q:  if
+A:  	jos
+Q:  because
+A:  	koska
+Q:  name
+A:  	nimi

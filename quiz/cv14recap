@@ -1,4 +1,0 @@
-Q: Give the formula for histogram equalization
-A: h(f(x)) = F(f(x))*255; F(y) = \sum_{y'}^y p(y') the cumulative distribution function and p(y) = \frac{|x \in \Omega : f(x)=y|}{|\Omega|} the histogram.
-Q: Define convolution (formula). What properties does it have?
-A: g(i,j) = \sum_{k,l} f(i-k,j-l)h(k,l) (discrete); g(x)= /integral f(x-u)h(u)du (continuous); f being the image and h the kernel. Properties: In the continuous case h is a impulse response function (h*/delta=h), Linearity, shift invariance, commutative, associative, distributes over addition, scalars factor out

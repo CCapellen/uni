@@ -1,6 +1,0 @@
-Q: what is ReLU
-A: f(s) = max(0,s)
-Q: What is sparsity-enforcing regularization?
-A:
-Q: describe the cross-entropy loss function
-A:
